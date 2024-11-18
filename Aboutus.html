@@ -1,0 +1,195 @@
+<head> 
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/ffecf09a52.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="icon" href="Daco_4503891.png">
+
+    <link rel="stylesheet" href="aunavbar.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <title>About Us</title>
+
+</head>
+
+    <body>
+
+
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen' ></i>
+                <span class="logo navLogo"><a href="Sourcecode.html">JustTravel</a></span>
+    
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="Sourcecode.html">JustTravel</a></span>
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+    
+                    <ul class="nav-links">
+                        <li><a href="Sourcecode.html">Home</a></li>
+                        <li><a href="Aboutus.html">About us</a></li>
+                        <li><a href="contactinfo.html">Contact us</a></li>
+                        <li><a href="projrep.html">Project Report</a></li>
+                    </ul>
+    
+                </div>
+    
+               
+            </div>
+        </nav>
+
+        
+        <script>
+
+            const body = document.querySelector("body"),
+                  nav = document.querySelector("nav"),
+                  modeToggle = document.querySelector(".dark-light"),
+                  searchToggle = document.querySelector(".searchToggle"),
+                  sidebarOpen = document.querySelector(".sidebarOpen"),
+                  siderbarClose = document.querySelector(".siderbarClose");
+            
+                  let getMode = localStorage.getItem("mode");
+                      if(getMode && getMode === "dark-mode"){
+                        body.classList.add("dark");
+                      }
+             
+                  
+            //   js code to toggle sidebar
+            sidebarOpen.addEventListener("click" , () =>{
+                nav.classList.add("active");
+            });
+            
+            body.addEventListener("click" , e =>{
+                let clickedElm = e.target;
+            
+                if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+                    nav.classList.remove("active");
+                }
+            });
+            
+            </script>
+
+
+        <div id="progressbar"></div>
+        <div id="scrollpath"></div>
+
+        <section>
+            
+            <form action="post">
+    
+            <div class="aboutus">
+    
+            <h2>About Us</h2>
+    
+            Launched in 2023, Just Travel is a technology company focused on empowering Indian travellers to plan,book and manage their trips across rail, air, buses and hotels.
+            We assist travellers in making smarter travel decisions by leveraging artificial intelligence,
+            machine learning, and data science led innovations on our OTA platforms, 
+            comprising our websites and mobile applications. 
+            Our vision is to become the most customer-centric travel company, 
+            by offering the best customer experience to our users. Our focus on travel utility and customer experience for travellers
+            in the 'next billion user' segment is driven by technology, 
+            cost-efficiency and our culture of innovation has made us India's leading travel ecosystem for the 'next billion users'.
+            
+            </div>
+    
+    
+    
+    
+            <div class="topt">
+                <h2 >Top Travels</h2>
+    
+                SRS Travels |
+                Kallada Travels |
+                KPN Travels |
+                Orange Travels |
+                Parveen Travels |
+                Rajdhani Express |
+                VRL Travels |
+                Chartered Speed Bus |
+                Bengal Tiger |
+                SRM Travels |
+                Infant Jesus |
+                Patel Travels |
+                JBT Travels |
+                Shatabdi Travels |
+                Eagle Travels |
+                Kanker Roadways |
+                Komitla |
+                Sri Krishna Travels |
+                Humsafar Travels |
+                Mahasagar Travels |
+                Raj Express |
+                Sharma Travels |
+                Shrinath Travels |
+                Universal Travels |
+                Verma Travels |
+                Gujarat Travels |
+                Madurai Radha Travels |
+                Patel Tours and Travels |
+                Paulo Travels |
+                Royal Travels |
+                Amarnath Travels |
+                Vaibhav Travels |
+                Ganesh Travels |
+                Jabbar Travels |
+                Jain Travels |
+                Manish Travels |
+                Pradhan Travels |
+                YBM Travels |
+                Hebron Transports |
+                Mahalaxmi travels |
+                MR Travels |
+                Vivegam Travels |
+                VST Travels |
+                Jakhar Travels |
+                Kaleswari Travels |
+                Mahendra Travels |
+                Neeta Tours and Travels |
+                Yamani Travels |
+                Arthi Travels |
+            </div>
+    
+            <div class="imgs">
+                <h2>
+                    Parterned RTC's
+                </h2>
+                <ul>
+                    <li><img src="tnsrctc.png" width="250" height="250"></li>
+                    <li><img src="kerlartc.png" width="250" height="250"></li>
+                    <li><img src="orctc.png" width="250" height="250"></li>
+                    <li><img src="rsrtc.png" width="250" height="250"></li>
+                    <li><img src="hrctc.png" width="250" height="250"></li>
+                </ul>
+    
+            </div>
+    
+            </form>
+    
+        </section>
+
+       <script type="text/javascript" >
+            const progress = document.getElementById('progressbar');
+            const totalheight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                const progressHeight = (window.pageYOffset / totalheight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
+    </body>
+
+
+        <hr>
+        <div class="sm">
+        <h3>SOCIAL MEDIA</h3>
+
+        <i class="fa-brands fa-facebook-f"></i> justtravel.india<br>
+        <i class="fa-brands fa-twitter"></i> justtravel_india<br>
+        <i class="fa-brands fa-instagram"></i> just.travel_india<br>
+        <i class="fa-solid fa-globe"></i> justtravel.in<br>
+        </div>
+
+</html>

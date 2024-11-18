@@ -1,0 +1,27 @@
+body
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.601), rgba(0, 0, 0, 0.568)), url("joeps.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+
+    
+}
+
+body h1{
+
+    padding: 50px;
+    text-align: center;
+    font-family: lato black;
+    color: whitesmoke;
+
+}
+
+.scan
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-56%,-50%);
+    position: absolute;
+}

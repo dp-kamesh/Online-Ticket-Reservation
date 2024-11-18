@@ -1,0 +1,45 @@
+*{
+    font-family: lato black;
+}
+body,html
+{
+    background-image: linear-gradient(rgba(125, 124, 124, 0.716),rgb(31, 30, 30)) ,url("support-customer-powerpoint-templates-for-powerpoint.jpg");
+    background-attachment: fixed;
+}
+
+.h1{
+
+    transform: translate(280%);
+    position: absolute;
+    margin: 90px;
+}
+
+
+
+.h1
+{
+    color: white;
+}
+
+p{
+    font-family: lato;
+}
+
+.address
+{
+    margin-left: 340px;
+
+
+    color: white;
+    position: relative;
+    transform: translateY(350%);
+    text-align: left;
+}
+
+.ch
+{
+    color: white;
+    position: relative;     
+    transform: translateY(285%);
+    margin-left: 980px;
+}

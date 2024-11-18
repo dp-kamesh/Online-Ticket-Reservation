@@ -1,0 +1,204 @@
+*{
+    font-family: lato;
+}
+
+body
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.601), rgba(0, 0, 0, 0.568)), url("joeps.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+p{
+    color: #ffffffd3;
+
+    font-family: lato black;
+    font-size: 50px;
+}
+.table
+{
+
+    top:50%;
+    left:50%;
+
+    right: 50%;
+    transform: translate(-50%,-50%);
+
+    position: absolute;
+    width: 700px;
+    padding:10px;
+
+    box-sizing: border-box;
+}
+
+.table h1
+{
+    color: white;
+}
+
+.table table tr td label
+{
+    color: rgb(255, 255, 255);
+    margin-top:100px;
+    margin-bottom: 100px;
+    padding: 5px;
+}
+
+button
+{
+    width: 550px;
+    height: 50px;
+    padding: 2px;
+
+    border: 2px solid #27343d;
+    border-radius: 20px;
+    background-color: #d228b046;
+    outline: rgb(255, 255, 255);
+
+    margin: 20px;
+    margin-top: 35px;
+    max-width: 650px;
+
+    font-family: lato black;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+
+    position:relative;
+    overflow: hidden;
+
+}
+
+button:hover{
+    border-color: #d228b046;
+    transition: .5s;
+}
+
+.navigationbar
+{
+    margin: auto;
+    width: 85%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.navigationbar ul li
+{
+    display: inline-block;
+    margin: 20px;
+}
+
+.navigationbar ul li a
+{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigationbar ul li a:hover{
+    color: #d228b0eb;
+    transition: .5s;
+}
+
+
+input[type=text] {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 25px;
+    border: none;
+    background: none;
+    outline: none;
+    color: grey;
+    border-bottom: 1px solid silver;
+}
+
+#doj
+{
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 25px;
+    border: none;
+    background: none;
+    outline: none;
+    color: grey;
+    border-bottom: 1px solid silver;
+}
+
+#doj::placeholder{
+    text-align: center;
+}
+
+input[type=text]:focus{
+    
+    border-bottom-color: #d228b0eb;
+    transition: .5s;
+}
+
+#doj:focus{
+    border-bottom-color: #d228b0eb;
+    top: -5px;
+    transition: .5s;
+    
+}
+
+input[type=date] {
+    width: 50%;
+    padding: 1.9px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 25px;
+    border: none;
+    background: none;
+    outline: none;
+    color: grey;
+    border-bottom: 1px solid silver;
+}
+
+label{
+
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+::-webkit-calendar-picker-indicator{
+
+    padding: 20px;
+    cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator:hover{
+    margin-top: -10px;
+    transition: .5s;
+}
+
+i
+{
+    color: #ffffffed;
+    margin-bottom: 10px;
+}
+
+.sbg
+{
+    color: #ffffffd3;
+    margin-top: 30px;
+    align-items: center;
+}
+
+span{
+    font-size: 30px;
+}
+
+span:hover{
+    color: #27343d;
+    transition: .5s;
+}

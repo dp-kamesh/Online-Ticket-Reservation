@@ -1,0 +1,290 @@
+<head>
+    <title>Just Travel</title>
+
+    <link rel="stylesheet" href="navbar.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="booking.css">
+
+    <script src="https://kit.fontawesome.com/ffecf09a52.js" crossorigin="anonymous"></script>
+    <script src="booking.js"></script>
+</head>
+
+<header>
+    <nav>
+    </nav>
+</header>
+
+<body>
+    <nav>
+        <div class="nav-bar" >
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="Sourcecode.html">JustTravel</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="Sourcecode.html">JustTravel</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="Sourcecode.html">Home</a></li>
+                    <li><a href="Aboutus.html">About us</a></li>
+                    <li><a href="contactinfo.html">Contact us</a></li>
+                    <li><a href="projrep.html">Project Report</a></li>
+                </ul>
+
+            </div>
+
+           
+        </div>
+    </nav>
+
+    
+    <script>
+
+        const body = document.querySelector("body"),
+              nav = document.querySelector("nav"),
+              searchToggle = document.querySelector(".searchToggle"),
+              sidebarOpen = document.querySelector(".sidebarOpen"),
+              siderbarClose = document.querySelector(".siderbarClose");
+               
+        //   js code to toggle sidebar
+        sidebarOpen.addEventListener("click" , () =>{
+            nav.classList.add("active");
+        });
+        
+        body.addEventListener("click" , e =>{
+            let clickedElm = e.target;
+        
+            if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+                nav.classList.remove("active");
+            }
+        });
+        
+        </script>
+
+
+        <script>
+            var scroll3 = window.pageYOffset;
+            window.onscroll = function()
+            {
+            var scroll2 = window.pageYOffset;
+            if(scroll3 > scroll2)
+            {
+                document.querySelector('nav').style.top = "0";
+            }
+            else
+            {
+                document.querySelector('nav').style.top = "-100px";
+            }
+            
+            scroll3 = scroll2;
+}
+        </script>
+
+
+
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+
+    <li style="list-style: none; color: white;" align="center">
+        <h3>BANGALORE&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long fa-beat-fade"></i>&nbsp;&nbsp;CHENNAI</h3> <br>
+     </li>
+
+
+    <section>
+        <div class="layout">
+            <div class="bus">
+                <table align="center"  cellpadding="19" id="table1">
+                    <tr style="font-family: lato black;">
+                        <th>
+                            BUS ID
+                        </th>
+                        <th>
+                            BUS NAME
+                        </th>
+                        <th>
+                            DEPARTURE
+                        </th>
+                        <th>
+                            ARRIVAL
+                        </th>
+                        <th>
+                            FARE
+                        </th>
+                        <th>
+                            BOOK SEATS
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            101
+                        </td>
+                        <td>
+                            YBM Travels
+                        </td>
+                        <td>
+                            23:00
+                        </td>
+                        <td>
+                            06:15
+                        </td>
+                        <td>
+                            <i class="fa-sharp fa-solid fa-indian-rupee-sign fa-xs">&nbsp;2500</i>   
+                        </td>
+                        <td id="button">
+                            <input type="button" value="BOOK" onClick=window.location.href="ybm.php">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="bus">
+                <table align="center" cellpadding="19" id="table2">
+                    <tr style="font-family: lato black;">
+                        <th>
+                            BUS ID
+                        </th>
+                        <th>
+                            BUS NAME
+                        </th>
+                        <th>
+                            DEPARTURE
+                        </th>
+                        <th>
+                            ARRIVAL
+                        </th>
+                        <th>
+                            FARE
+                        </th>
+                        <th>
+                            BOOK SEATS
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            102
+                        </td>
+                        <td>
+                            Orange Travels
+                        </td>
+                        <td>
+                            13:00
+                        </td>
+                        <td>
+                            18:30
+                        </td>
+                        <td>
+                            <i class="fa-sharp fa-solid fa-indian-rupee-sign fa-xs">&nbsp;1500</i>
+                        </td>
+                        <td id="button">
+                            <input type="button" value="BOOK" onClick=window.location.href="Orange.php">
+                        </td>
+                    </tr>
+                </table>
+                <p id="info"></p>
+            </div>
+    
+            <div class="bus">
+                <table align="center" cellpadding="19" id="table3">
+                    <tr style="font-family: lato black;">
+                        <th>
+                            BUS ID
+                        </th>
+                        <th>
+                            BUS NAME
+                        </th>
+                        <th>
+                            DEPARTURE
+                        </th>
+                        <th>
+                            ARRIVAL
+                        </th>
+                        <th>
+                            FARE
+                        </th>
+                        <th>
+                            BOOK SEATS
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            103
+                        </td>
+                        <td>
+                            Royal Travels
+                        </td>
+                        <td>
+                            22:00
+                        </td>
+                        <td>
+                            05:00
+                        </td>
+                        <td>
+                            <i class="fa-sharp fa-solid fa-indian-rupee-sign fa-xs">&nbsp;1000</i>
+                        </td>
+                        <td id="button">
+                            <input type="button" value="BOOK" onClick=window.location.href="royal.php">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="bus">
+                <table align="center" cellpadding="19" id="table4">
+                    <tr style="font-family: lato black;">
+                        <th>
+                            BUS ID
+                        </th>
+                        <th>
+                            BUS NAME
+                        </th>
+                        <th>
+                            DEPARTURE
+                        </th>
+                        <th>
+                            ARRIVAL
+                        </th>
+                        <th>
+                            FARE
+                        </th>
+                        <th>
+                            BOOK SEATS
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            104
+                        </td>
+                        <td>
+                            SRS Travels
+                        </td>
+                        <td>
+                            04:00
+                        </td>
+                        <td>
+                            09:45
+                        </td>
+                        <td>
+                            <i class="fa-sharp fa-solid fa-indian-rupee-sign fa-xs">&nbsp;800</i>
+                        </td>
+                        <td id="button">
+                            <input type="button" value="BOOK" onClick=window.location.href="SRS.php">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+    
+        </div>
+    </section>
+    <script type="text/javascript" >
+        const progress = document.getElementById('progressbar');
+        const totalheight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            const progressHeight = (window.pageYOffset / totalheight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+</body>

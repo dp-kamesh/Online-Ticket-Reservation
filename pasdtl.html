@@ -1,0 +1,45 @@
+<head>
+    <title>Passenger Details</title>
+    <link rel="stylesheet" href="pasdtl.css">
+    <script type="text/javascript" src="pasdtl.js"></script>
+    <script src="pasvalidation.js"></script>
+    
+</head>
+
+<body>
+    <div class="Details">
+        <form action="mybookings.html" method="post">
+
+            <h1 >PASSENGER DETAILS</h1>
+
+            <div class="txt_field">
+                <input type="text" id="pname" name="pname" required/>
+                <span></span>
+                <label >Passenger Name</label>
+            </div>
+            
+            <div class="txt_field">
+                <input type="text" id="pnumber" name="pnumber" required/>
+                <span></span>
+                <label >Phone number</label>
+            </div>
+
+            <div class="txt_field">
+           
+                <input type="text" id="pemail" name="pemail" required/>
+                <span></span>
+                <label >Email</label>
+    
+            </div>
+
+           <div class="radio">
+            <input type="radio" name="pgender" id="pgenderm" value="Male" checked>Male
+            <input type="radio" name="pgender" id="pgenderf" value="Female" >Female
+            <span></span>
+            </div>
+
+            <input type="submit" value="SUBMIT" onclick="next();">
+
+        </form>
+    </div>
+</body>

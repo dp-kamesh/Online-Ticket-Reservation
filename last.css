@@ -1,0 +1,65 @@
+*{
+    font-family: lato black;
+    color: whitesmoke;
+}
+
+body{
+    
+    background-image:linear-gradient(rgba(0, 0, 0, 0.601), rgba(0, 0, 0, 0.568)), url("joeps.jpg");
+
+    background-position: center;
+    background-size: cover ;
+    background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.center{
+    text-align: center;
+    padding: 20px;
+    font-size: 30;
+}
+
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-65%);
+}
+
+body h2{
+    font-size: 35px;
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+input[type="submit"]{
+    font-family:lato black;
+    width: 30%;
+    height: 50px;   
+    border: 1px solid;
+    background: #d228b06f;
+    border-radius: 25px;
+    border-color: #27343d;
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    transform: translateX(115%);
+    top: 75%;
+
+  }
+
+  input[type="submit"]:hover{
+    border-color:#d228b06f;
+    color: #27343d;
+    transition: .5s;
+  }

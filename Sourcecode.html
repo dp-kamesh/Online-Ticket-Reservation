@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="sourcecodepage.css">
+
+        <link rel="stylesheet" href="navbar.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    
+        <script src="https://kit.fontawesome.com/ffecf09a52.js" crossorigin="anonymous"></script>
+        <script src="source.js"></script>
+
+        <title>
+            Just Travel
+        </title>
+
+    </head>
+
+<p></p>
+
+<!--Main Table-->
+    <body>
+
+
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen' ></i>
+                <span class="logo navLogo"><a href="Sourcecode.html">JustTravel</a></span>
+    
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="Sourcecode.html">JustTravel</a></span>
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+    
+                    <ul class="nav-links">
+                        <li><a href="Sourcecode.html">Home</a></li>
+                        <li><a href="Aboutus.html">About us</a></li>
+                        <li><a href="contactinfo.html">Contact us</a></li>
+                        <li><a href="projrep.html">Project Report</a></li>
+                    </ul>
+    
+                </div>
+    
+               
+            </div>
+        </nav>
+
+        
+        <script>
+
+            const body = document.querySelector("body"),
+                  nav = document.querySelector("nav"),
+                  modeToggle = document.querySelector(".dark-light"),
+                  searchToggle = document.querySelector(".searchToggle"),
+                  sidebarOpen = document.querySelector(".sidebarOpen"),
+                  siderbarClose = document.querySelector(".siderbarClose");
+            
+                  let getMode = localStorage.getItem("mode");
+                      if(getMode && getMode === "dark-mode"){
+                        body.classList.add("dark");
+                      }
+             
+                  
+            //   js code to toggle sidebar
+            sidebarOpen.addEventListener("click" , () =>{
+                nav.classList.add("active");
+            });
+            
+            body.addEventListener("click" , e =>{
+                let clickedElm = e.target;
+            
+                if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+                    nav.classList.remove("active");
+                }
+            });
+            
+            </script>
+
+
+
+
+        <center>
+            <div class="navigationbar">
+
+
+            
+                <div class="table">
+    
+                    <p> JUST TRAVEL </p>
+                    
+                    <div class="sbg">
+                        <i class="fa-solid fa-bus fa-beat-fade"></i>
+                        <b>&nbsp;SEARCH&nbsp;&nbsp;.&nbsp;&nbsp;BOOK&nbsp;&nbsp;.&nbsp;&nbsp;GO</b>
+                    </div>
+                        <table cellspacing="20">
+                            <tr>
+            
+                                <td>
+                                    <input type="text" id="from" placeholder="FROM" required>
+                                </td>
+    
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long fa-fade fa-3x"></i>&nbsp;&nbsp;&nbsp;
+                                </td>
+            
+                                <td>
+                                    <input type="text" id="to" placeholder="TO" required>
+                                </td>
+            
+                                <td>
+                                    
+                                </td>
+            
+                            </tr>
+                        </table> 
+                        
+                        <input placeholder="DATE" type="text" name="setTodaysDate" onfocus="(this.type = 'date')"  id="doj">
+    
+                        <button type="button" onclick="search();" style="color: rgba(224, 224, 224, 0.805);">
+                            <span>SEARCH</span>
+                        </button>
+                </div> 
+            </div>
+        </center>
+    </body>
+</html> 

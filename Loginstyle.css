@@ -1,0 +1,124 @@
+*{
+  font-family: lato;
+  color: #27343d;
+}
+body
+{
+    background-image: url("joeps.jpg");
+
+    background-position: center;
+    background-size: cover ;
+    background-attachment: fixed;
+
+ }
+
+ head h1{
+  font-family: lato black;
+  text-decoration: dashed;
+ }
+
+ .center
+ {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgba(255, 255, 255, 0.149);
+    border-radius: 15px;
+    box-shadow: 1px 10px 10px 10px rgba(86, 85, 85, 0.299);
+    
+ }
+
+ .center h1
+ {
+  font-family: lato black;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid silver;
+ }
+
+ .center form
+
+ {
+    padding: 70px;
+    box-sizing: border-box;
+ }
+
+form .txt_field
+{
+    position: relative;
+    transform: translateY(-150%);
+    margin: 20px;
+    margin-top: 30px;
+    border-bottom: 2px solid silver;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  .txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  input[type="button"]{
+    margin-top: -20000px;
+    font-family: lato black;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #d228b06f;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #27343d;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+  }
+
+  input[type="button"]:hover{
+    border-color: #d228b06f;
+    transition: .5s;
+  }
+
+  .txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #a71f8cb9;
+    transition: .5s;
+  }
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #a71f8cb9;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+
+.pass{
+    margin: -5px 0 20px 5px;
+    cursor: pointer;
+  }
+  .pass:hover{
+    text-decoration: underline;
+  }

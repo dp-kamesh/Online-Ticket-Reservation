@@ -1,0 +1,161 @@
+*{
+        font-family: lato;
+        
+}
+body{
+   background-image: url("joeps.jpg");
+   
+   background-position: center;
+   background-size: cover ;
+   background-attachment: fixed;
+   
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width:0;
+}
+
+#scrollpath{
+    position: fixed;
+    top:0;
+    right:0;
+    width: 10px;
+    height: 100%;
+    border-radius: 100vw;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar{
+    position: fixed;
+    top:0;
+    right:0;
+    width: 10px;
+    height: 100%;
+    border-radius: 100vw;
+    background: linear-gradient(to top,rgb(154, 0, 154),rgb(24, 19, 130));
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+
+    50%
+    {
+        
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar:before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, violet,black);
+    filter: blur(20px)
+
+}
+
+#progressbar:after{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, violet,black);
+    filter: blur(30px)
+
+}
+
+
+header{
+    
+    list-style: none;
+    margin-top:50px;
+    padding: 0%;
+    height: 80px;
+    width: 100%;
+    display: block;
+    
+}
+
+.bus{
+    padding: 30px;
+    border: 2px;
+    border-style: groove;
+    border-width: 60%;
+    border-color: white;
+
+    margin: 4%;
+    width: 900;
+    height: 190;
+    background-color:rgba(142, 142, 142, 0.233);
+    box-shadow: 1px 10px 10px 10px rgba(86, 85, 85, 0.299);
+
+}
+
+.layout
+{
+    transform: translate(28%);
+    position:relative;
+    margin-right: 480px;
+}
+
+body table tr th{
+    font-size: 22;
+    color: white;
+    text-align: center;
+}
+
+body table tr td{
+    font-size: 20;
+    padding: 40px;
+    text-align: center;
+    color:white;
+
+}
+
+input[type=button]
+{
+    font-family: lato black;
+    color: whitesmoke;
+    width: 100px;
+    height: 50px;
+    background: #d228b06f;
+    border: 1px solid;
+    border-color: #27343d;
+    border-radius: 10%;
+    cursor: pointer;
+}
+input[type=button]:hover{
+    transition: .5s;
+    border-color: #d228b06f;
+    color: #27343d;
+    margin-top: -4px;
+}
+
+
+.bus:hover{
+    transition: .5s;
+    margin-left: 80px;
+}
+
+h1{
+    cursor: pointer;
+    font-family: lato black;
+}
+h3{
+    font-family: lato black;
+    font-size: 30px;
+}

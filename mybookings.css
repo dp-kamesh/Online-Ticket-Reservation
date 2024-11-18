@@ -1,0 +1,88 @@
+*{
+
+    font-family:lato black;
+    
+    background-position: center;
+    background-size: cover ;
+    background-attachment: fixed;
+    color: #27343d;;
+}
+body{
+    background-image: url("joeps.jpg");
+}
+.center
+{
+   position: absolute;
+   top: 50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   width: 650px;
+   background: rgba(255, 255, 255, 0.149);
+   border-radius: 15px;
+   box-shadow: 1px 10px 10px 10px rgba(86, 85, 85, 0.299);
+}
+
+.center form{
+    padding: 20;
+}
+
+.center form h1
+{
+    font-size: 50;
+    border-bottom: 3px solid rgb(126, 126, 126);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.792);
+    padding: 20px;
+    
+}
+
+.center h2{
+    padding: 10px;
+    margin: 20px;
+}
+
+input[type="submit"]{
+    width: 50%;
+    height: 50px;
+    border: 1px solid;
+    background: #d228b06f;
+    border-radius: 25px;
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    transform: translate(-19%);
+    top: 80px;
+    left:230px;
+    border-color: #27343d;
+    
+}
+
+input[type="submit"]:hover{
+    transition: .5s;
+    border-radius: 25px;
+    border-color: #d228b06f;
+    color: #27343d;
+}
+
+#pasname{
+    font-family: lato;
+    color: whitesmoke;
+}
+
+#pasnumber{
+    font-family: lato;
+    color: whitesmoke;
+}
+
+#pasemail{
+    font-family: lato;
+    color: whitesmoke;
+}
+
+#pasgender{
+    font-family: lato;
+    color: whitesmoke;
+}
